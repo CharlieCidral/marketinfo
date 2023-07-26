@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Data Results</title>
+</head>
+<body>
+    <h1>Stock Data Results</h1>
+    <h2>Ticker: {{ ticker }}</h2>
+    <h2>View Option: {{ view_option }}</h2>
+    <pre>{{ stock_data }}</pre>
+
+    <form action="/save_csv" method="post">
+        <input type="hidden" name="ticker" value="{{ ticker }}">
+        <input type="hidden" name="view_option" value="{{ view_option }}">
+        <button type="submit">Save as CSV</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Data Retrieval</title>
+</head>
+<body>
+    <h1>Stock Data Retrieval</h1>
+    <form action="/" method="post">
+        <label for="ticker">Enter a stock ticker:</label>
+        <input type="text" id="ticker" name="ticker">
+        <a href="https://en.wikipedia.org/wiki/Nasdaq-100#Components" target="_blank">get tickers</a>
+        <br><br>
+        <label for="view_option">What do you want to see?</label>
+        <select id="view_option" name="view_option">
+            <option value="info">Info</option>
+            <option value="actions">Actions</option>
+            <option value="dividends">Dividends</option>
+            <option value="splits">Splits</option>
+            <option value="capital_gains">Capital_gains</option>
+            <option value="shares">Shares</option>
+            <option value="income_stmt">Income_stmt</option>
+            <option value="balance_sheet">Balance_sheet</option>
+            <option value="cashflow">Cashflow</option>
+            <option value="holders">Holders</option>
+            <option value="earnings_dates">Earnings_dates</option>
+            <option value="isin">Isin</option>
+            <option value="options">Options</option>
+            <option value="news">News</option>
+            <!-- Add other options here... -->
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
